@@ -1,0 +1,12 @@
+node_modules/
+__pycache__/
+*.pyc
+.env
+venv/
+.venv/
+data/scenario_*/*.csv
+data/scenario_*/*.pdf
+ml_artifacts/*.pkl
+ml_artifacts/*.pt
+*.log
+.DS_Store

@@ -1,0 +1,11 @@
+{
+  "bank_name": "hdfc",
+  "column_map": {
+    "Date": "date",
+    "Narration": "narration",
+    "Withdrawal Amt": "amount_debit",
+    "Deposit Amt": "amount_credit",
+    "Closing Balance": "balance"
+  },
+  "date_format": "%d/%m/%y"
+}

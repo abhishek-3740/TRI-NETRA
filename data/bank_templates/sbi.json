@@ -1,0 +1,11 @@
+{
+  "bank_name": "sbi",
+  "column_map": {
+    "Txn Date": "date",
+    "Description": "narration",
+    "Debit": "amount_debit",
+    "Credit": "amount_credit",
+    "Balance": "balance"
+  },
+  "date_format": "%d/%m/%Y"
+}
