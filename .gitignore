@@ -10,3 +10,4 @@ ml_artifacts/*.pkl
 ml_artifacts/*.pt
 *.log
 .DS_Store
+.claude/
