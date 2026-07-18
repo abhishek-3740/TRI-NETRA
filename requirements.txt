@@ -2,3 +2,5 @@ polars
 rapidfuzz
 networkx
 matplotlib
+pdfplumber
+scikit-learn
