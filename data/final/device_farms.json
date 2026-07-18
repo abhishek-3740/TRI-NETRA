@@ -1,0 +1,643 @@
+{
+  "generated_at": "2026-07-19T01:03:22.100405",
+  "total_imeis_analyzed": 50,
+  "suspicious_imei_count": 18,
+  "top_50_device_farms": [
+    {
+      "imei": "812866462699514",
+      "risk_score": 8.0181,
+      "risk_tier": "medium",
+      "sim_count": 3,
+      "msisdns": [
+        "7795887381",
+        "7802773774",
+        "9893704108"
+      ],
+      "cdr_record_count": 9,
+      "ipdr_record_count": 0,
+      "total_record_count": 9
+    },
+    {
+      "imei": "887094346351865",
+      "risk_score": 8.0181,
+      "risk_tier": "medium",
+      "sim_count": 3,
+      "msisdns": [
+        "7420240282",
+        "8429869595",
+        "8711614338"
+      ],
+      "cdr_record_count": 9,
+      "ipdr_record_count": 0,
+      "total_record_count": 9
+    },
+    {
+      "imei": "630138853513808",
+      "risk_score": 8.0181,
+      "risk_tier": "medium",
+      "sim_count": 3,
+      "msisdns": [
+        "6455905226",
+        "7009003141",
+        "9643571797"
+      ],
+      "cdr_record_count": 9,
+      "ipdr_record_count": 0,
+      "total_record_count": 9
+    },
+    {
+      "imei": "773606565152731",
+      "risk_score": 8.0181,
+      "risk_tier": "medium",
+      "sim_count": 3,
+      "msisdns": [
+        "6372437322",
+        "6954211281",
+        "8502731159"
+      ],
+      "cdr_record_count": 9,
+      "ipdr_record_count": 0,
+      "total_record_count": 9
+    },
+    {
+      "imei": "141336596599121",
+      "risk_score": 8.0181,
+      "risk_tier": "medium",
+      "sim_count": 3,
+      "msisdns": [
+        "6809453458",
+        "8452914293",
+        "9967581272"
+      ],
+      "cdr_record_count": 9,
+      "ipdr_record_count": 0,
+      "total_record_count": 9
+    },
+    {
+      "imei": "762921735157685",
+      "risk_score": 8.0181,
+      "risk_tier": "medium",
+      "sim_count": 3,
+      "msisdns": [
+        "7473535749",
+        "7880729091",
+        "9676072925"
+      ],
+      "cdr_record_count": 9,
+      "ipdr_record_count": 0,
+      "total_record_count": 9
+    },
+    {
+      "imei": "372586480745773",
+      "risk_score": 8.0181,
+      "risk_tier": "medium",
+      "sim_count": 3,
+      "msisdns": [
+        "6922527117",
+        "8625210482",
+        "9799738016"
+      ],
+      "cdr_record_count": 9,
+      "ipdr_record_count": 0,
+      "total_record_count": 9
+    },
+    {
+      "imei": "330239138100403",
+      "risk_score": 8.0181,
+      "risk_tier": "medium",
+      "sim_count": 3,
+      "msisdns": [
+        "7700327069",
+        "9055992639",
+        "9815399558"
+      ],
+      "cdr_record_count": 9,
+      "ipdr_record_count": 0,
+      "total_record_count": 9
+    },
+    {
+      "imei": "319684575028648",
+      "risk_score": 8.0181,
+      "risk_tier": "medium",
+      "sim_count": 3,
+      "msisdns": [
+        "6886951950",
+        "9185896424",
+        "9946514986"
+      ],
+      "cdr_record_count": 9,
+      "ipdr_record_count": 0,
+      "total_record_count": 9
+    },
+    {
+      "imei": "280135798565105",
+      "risk_score": 8.0181,
+      "risk_tier": "medium",
+      "sim_count": 3,
+      "msisdns": [
+        "7713934783",
+        "8161136489",
+        "9868288796"
+      ],
+      "cdr_record_count": 9,
+      "ipdr_record_count": 0,
+      "total_record_count": 9
+    },
+    {
+      "imei": "473537295133990",
+      "risk_score": 8.0181,
+      "risk_tier": "medium",
+      "sim_count": 3,
+      "msisdns": [
+        "6700741587",
+        "8403219555",
+        "8778475069"
+      ],
+      "cdr_record_count": 9,
+      "ipdr_record_count": 0,
+      "total_record_count": 9
+    },
+    {
+      "imei": "995862831122085",
+      "risk_score": 8.0181,
+      "risk_tier": "medium",
+      "sim_count": 3,
+      "msisdns": [
+        "7061466197",
+        "9152176133",
+        "9935281999"
+      ],
+      "cdr_record_count": 9,
+      "ipdr_record_count": 0,
+      "total_record_count": 9
+    },
+    {
+      "imei": "956288889321518",
+      "risk_score": 8.0181,
+      "risk_tier": "medium",
+      "sim_count": 3,
+      "msisdns": [
+        "8279648167",
+        "8491436679",
+        "9173593280"
+      ],
+      "cdr_record_count": 9,
+      "ipdr_record_count": 0,
+      "total_record_count": 9
+    },
+    {
+      "imei": "781996756572285",
+      "risk_score": 8.0181,
+      "risk_tier": "medium",
+      "sim_count": 3,
+      "msisdns": [
+        "6009034314",
+        "6207847465",
+        "9263604860"
+      ],
+      "cdr_record_count": 9,
+      "ipdr_record_count": 0,
+      "total_record_count": 9
+    },
+    {
+      "imei": "143011397132691",
+      "risk_score": 8.0181,
+      "risk_tier": "medium",
+      "sim_count": 3,
+      "msisdns": [
+        "6550539139",
+        "8468597101",
+        "8903000937"
+      ],
+      "cdr_record_count": 9,
+      "ipdr_record_count": 0,
+      "total_record_count": 9
+    },
+    {
+      "imei": "287635680378269",
+      "risk_score": 7.6512,
+      "risk_tier": "medium",
+      "sim_count": 3,
+      "msisdns": [
+        "6657013548",
+        "7809531078",
+        "9032007059"
+      ],
+      "cdr_record_count": 8,
+      "ipdr_record_count": 0,
+      "total_record_count": 8
+    },
+    {
+      "imei": "165049041140664",
+      "risk_score": 7.6512,
+      "risk_tier": "medium",
+      "sim_count": 3,
+      "msisdns": [
+        "7722009239",
+        "8875835933",
+        "9050667541"
+      ],
+      "cdr_record_count": 8,
+      "ipdr_record_count": 0,
+      "total_record_count": 8
+    },
+    {
+      "imei": "840360878855184",
+      "risk_score": 6.7761,
+      "risk_tier": "medium",
+      "sim_count": 3,
+      "msisdns": [
+        "6563949361",
+        "6899872990",
+        "8846868478"
+      ],
+      "cdr_record_count": 6,
+      "ipdr_record_count": 0,
+      "total_record_count": 6
+    },
+    {
+      "imei": "823190432477576",
+      "risk_score": 0.0,
+      "risk_tier": "low",
+      "sim_count": 1,
+      "msisdns": [
+        "8748494922"
+      ],
+      "cdr_record_count": 0,
+      "ipdr_record_count": 3,
+      "total_record_count": 3
+    },
+    {
+      "imei": "871737988054143",
+      "risk_score": 0.0,
+      "risk_tier": "low",
+      "sim_count": 1,
+      "msisdns": [
+        "7135263810"
+      ],
+      "cdr_record_count": 0,
+      "ipdr_record_count": 4,
+      "total_record_count": 4
+    },
+    {
+      "imei": "475627104622212",
+      "risk_score": 0.0,
+      "risk_tier": "low",
+      "sim_count": 1,
+      "msisdns": [
+        "7199971163"
+      ],
+      "cdr_record_count": 6,
+      "ipdr_record_count": 0,
+      "total_record_count": 6
+    },
+    {
+      "imei": "762780148602001",
+      "risk_score": 0.0,
+      "risk_tier": "low",
+      "sim_count": 1,
+      "msisdns": [
+        "7685804738"
+      ],
+      "cdr_record_count": 0,
+      "ipdr_record_count": 6,
+      "total_record_count": 6
+    },
+    {
+      "imei": "705846478601525",
+      "risk_score": 0.0,
+      "risk_tier": "low",
+      "sim_count": 1,
+      "msisdns": [
+        "9670491326"
+      ],
+      "cdr_record_count": 0,
+      "ipdr_record_count": 3,
+      "total_record_count": 3
+    },
+    {
+      "imei": "240828323759015",
+      "risk_score": 0.0,
+      "risk_tier": "low",
+      "sim_count": 1,
+      "msisdns": [
+        "7490864024"
+      ],
+      "cdr_record_count": 6,
+      "ipdr_record_count": 0,
+      "total_record_count": 6
+    },
+    {
+      "imei": "649399036441712",
+      "risk_score": 0.0,
+      "risk_tier": "low",
+      "sim_count": 1,
+      "msisdns": [
+        "7016609151"
+      ],
+      "cdr_record_count": 4,
+      "ipdr_record_count": 0,
+      "total_record_count": 4
+    },
+    {
+      "imei": "659641141742995",
+      "risk_score": 0.0,
+      "risk_tier": "low",
+      "sim_count": 1,
+      "msisdns": [
+        "9626045532"
+      ],
+      "cdr_record_count": 0,
+      "ipdr_record_count": 4,
+      "total_record_count": 4
+    },
+    {
+      "imei": "693592443339907",
+      "risk_score": 0.0,
+      "risk_tier": "low",
+      "sim_count": 1,
+      "msisdns": [
+        "8022934747"
+      ],
+      "cdr_record_count": 13,
+      "ipdr_record_count": 0,
+      "total_record_count": 13
+    },
+    {
+      "imei": "581898639096540",
+      "risk_score": 0.0,
+      "risk_tier": "low",
+      "sim_count": 1,
+      "msisdns": [
+        "8518973934"
+      ],
+      "cdr_record_count": 0,
+      "ipdr_record_count": 11,
+      "total_record_count": 11
+    },
+    {
+      "imei": "704278405957487",
+      "risk_score": 0.0,
+      "risk_tier": "low",
+      "sim_count": 1,
+      "msisdns": [
+        "7136593568"
+      ],
+      "cdr_record_count": 0,
+      "ipdr_record_count": 5,
+      "total_record_count": 5
+    },
+    {
+      "imei": "416445292375060",
+      "risk_score": 0.0,
+      "risk_tier": "low",
+      "sim_count": 1,
+      "msisdns": [
+        "7422962420"
+      ],
+      "cdr_record_count": 0,
+      "ipdr_record_count": 4,
+      "total_record_count": 4
+    },
+    {
+      "imei": "290883015834734",
+      "risk_score": 0.0,
+      "risk_tier": "low",
+      "sim_count": 1,
+      "msisdns": [
+        "8080194604"
+      ],
+      "cdr_record_count": 0,
+      "ipdr_record_count": 3,
+      "total_record_count": 3
+    },
+    {
+      "imei": "481939751611330",
+      "risk_score": 0.0,
+      "risk_tier": "low",
+      "sim_count": 1,
+      "msisdns": [
+        "7695412296"
+      ],
+      "cdr_record_count": 5,
+      "ipdr_record_count": 0,
+      "total_record_count": 5
+    },
+    {
+      "imei": "689695836478357",
+      "risk_score": 0.0,
+      "risk_tier": "low",
+      "sim_count": 1,
+      "msisdns": [
+        "9820052237"
+      ],
+      "cdr_record_count": 5,
+      "ipdr_record_count": 0,
+      "total_record_count": 5
+    },
+    {
+      "imei": "345240155368060",
+      "risk_score": 0.0,
+      "risk_tier": "low",
+      "sim_count": 1,
+      "msisdns": [
+        "6864448219"
+      ],
+      "cdr_record_count": 6,
+      "ipdr_record_count": 0,
+      "total_record_count": 6
+    },
+    {
+      "imei": "559083351923943",
+      "risk_score": 0.0,
+      "risk_tier": "low",
+      "sim_count": 1,
+      "msisdns": [
+        "7526800875"
+      ],
+      "cdr_record_count": 6,
+      "ipdr_record_count": 0,
+      "total_record_count": 6
+    },
+    {
+      "imei": "701017513610304",
+      "risk_score": 0.0,
+      "risk_tier": "low",
+      "sim_count": 1,
+      "msisdns": [
+        "9653734637"
+      ],
+      "cdr_record_count": 7,
+      "ipdr_record_count": 0,
+      "total_record_count": 7
+    },
+    {
+      "imei": "993728846232679",
+      "risk_score": 0.0,
+      "risk_tier": "low",
+      "sim_count": 1,
+      "msisdns": [
+        "8443559108"
+      ],
+      "cdr_record_count": 5,
+      "ipdr_record_count": 0,
+      "total_record_count": 5
+    },
+    {
+      "imei": "373844616811697",
+      "risk_score": 0.0,
+      "risk_tier": "low",
+      "sim_count": 1,
+      "msisdns": [
+        "6811161809"
+      ],
+      "cdr_record_count": 12,
+      "ipdr_record_count": 0,
+      "total_record_count": 12
+    },
+    {
+      "imei": "519662566506818",
+      "risk_score": 0.0,
+      "risk_tier": "low",
+      "sim_count": 1,
+      "msisdns": [
+        "8424063281"
+      ],
+      "cdr_record_count": 9,
+      "ipdr_record_count": 0,
+      "total_record_count": 9
+    },
+    {
+      "imei": "874563054540079",
+      "risk_score": 0.0,
+      "risk_tier": "low",
+      "sim_count": 1,
+      "msisdns": [
+        "6031414562"
+      ],
+      "cdr_record_count": 13,
+      "ipdr_record_count": 0,
+      "total_record_count": 13
+    },
+    {
+      "imei": "162825489434107",
+      "risk_score": 0.0,
+      "risk_tier": "low",
+      "sim_count": 1,
+      "msisdns": [
+        "6554830412"
+      ],
+      "cdr_record_count": 9,
+      "ipdr_record_count": 0,
+      "total_record_count": 9
+    },
+    {
+      "imei": "163785850418395",
+      "risk_score": 0.0,
+      "risk_tier": "low",
+      "sim_count": 1,
+      "msisdns": [
+        "9172317729"
+      ],
+      "cdr_record_count": 10,
+      "ipdr_record_count": 0,
+      "total_record_count": 10
+    },
+    {
+      "imei": "625778851707668",
+      "risk_score": 0.0,
+      "risk_tier": "low",
+      "sim_count": 1,
+      "msisdns": [
+        "9602726797"
+      ],
+      "cdr_record_count": 3,
+      "ipdr_record_count": 0,
+      "total_record_count": 3
+    },
+    {
+      "imei": "608949255218483",
+      "risk_score": 0.0,
+      "risk_tier": "low",
+      "sim_count": 1,
+      "msisdns": [
+        "6037742909"
+      ],
+      "cdr_record_count": 4,
+      "ipdr_record_count": 0,
+      "total_record_count": 4
+    },
+    {
+      "imei": "708731315305627",
+      "risk_score": 0.0,
+      "risk_tier": "low",
+      "sim_count": 1,
+      "msisdns": [
+        "6446464186"
+      ],
+      "cdr_record_count": 8,
+      "ipdr_record_count": 0,
+      "total_record_count": 8
+    },
+    {
+      "imei": "787349413209313",
+      "risk_score": 0.0,
+      "risk_tier": "low",
+      "sim_count": 1,
+      "msisdns": [
+        "7429235931"
+      ],
+      "cdr_record_count": 7,
+      "ipdr_record_count": 0,
+      "total_record_count": 7
+    },
+    {
+      "imei": "619076073155323",
+      "risk_score": 0.0,
+      "risk_tier": "low",
+      "sim_count": 1,
+      "msisdns": [
+        "9213144098"
+      ],
+      "cdr_record_count": 12,
+      "ipdr_record_count": 0,
+      "total_record_count": 12
+    },
+    {
+      "imei": "215995945506219",
+      "risk_score": 0.0,
+      "risk_tier": "low",
+      "sim_count": 1,
+      "msisdns": [
+        "6643359311"
+      ],
+      "cdr_record_count": 8,
+      "ipdr_record_count": 7,
+      "total_record_count": 15
+    },
+    {
+      "imei": "812462920760962",
+      "risk_score": 0.0,
+      "risk_tier": "low",
+      "sim_count": 1,
+      "msisdns": [
+        "6889471710"
+      ],
+      "cdr_record_count": 4,
+      "ipdr_record_count": 0,
+      "total_record_count": 4
+    },
+    {
+      "imei": "710560061392048",
+      "risk_score": 0.0,
+      "risk_tier": "low",
+      "sim_count": 1,
+      "msisdns": [
+        "8977351754"
+      ],
+      "cdr_record_count": 0,
+      "ipdr_record_count": 4,
+      "total_record_count": 4
+    }
+  ]
+}

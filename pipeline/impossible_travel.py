@@ -248,7 +248,7 @@ def detect_impossible_travel(
     anomalies: List[ImpossibleTravelAnomaly] = []
 
     # Group by entity, sort chronologically within each group
-    for entity_id, group in all_geo.group_by("entity_id"):
+    for (entity_id,), group in all_geo.group_by("entity_id"):
         group_sorted = group.sort("timestamp")
         rows = group_sorted.to_dicts()
         if len(rows) < 2:

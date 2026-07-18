@@ -206,73 +206,99 @@ def detect_criminal_hideouts(
         print("[SC] No geo-tagged events found. Returning empty.")
         return []
 
-    # ── Build 3D space-time matrix ─────────────────────────────────────
-    X_scaled, scaler = _build_space_time_matrix(events)
+    # ── Daily-windowed DBSCAN ──────────────────────────────────────────
+    # Running DBSCAN on a full year of country-wide data in one shot
+    # makes eps=0.5 in StandardScaler space cover thousands of km and
+    # months of time. Instead, we process each day separately so that
+    # DBSCAN clusters compare only events within the same 24-hour window,
+    # making spatial proximity the dominant clustering dimension.
 
-    # ── Run DBSCAN (ST-DBSCAN proxy) ───────────────────────────────────
-    db = DBSCAN(eps=eps, min_samples=min_samples, metric="euclidean", n_jobs=-1)
-    labels = db.fit_predict(X_scaled)
-
-    n_clusters = len(set(labels)) - (1 if -1 in labels else 0)
-    n_noise = list(labels).count(-1)
-    print(f"[SC] DBSCAN found {n_clusters} clusters, {n_noise} noise points.")
-
-    # ── Analyze clusters ───────────────────────────────────────────────
-    events = events.with_columns(pl.Series("cluster_id", labels))
+    events = events.with_columns(
+        pl.col("timestamp").cast(pl.Date).alias("_date")
+    )
 
     hideouts: List[HideoutCluster] = []
-    unique_labels = set(labels)
-    unique_labels.discard(-1)  # skip noise
-    unique_labels = sorted(unique_labels)
+    cluster_id_offset = 0
+    unique_dates = sorted(events["_date"].unique().to_list())
+    print(f"[SC] Processing {len(unique_dates)} daily windows...")
 
-    for cid in unique_labels:
-        cluster_df = events.filter(pl.col("cluster_id") == cid)
-        entity_ids = sorted(set(cluster_df["entity_id"].to_list()))
-
-        # Only flag clusters with >= 2 distinct canonical entities
-        if len(entity_ids) < 2:
+    for date_val in unique_dates:
+        day_events = events.filter(pl.col("_date") == date_val)
+        if day_events.height < min_samples:
             continue
 
-        lats = cluster_df["Latitude"].to_numpy()
-        lons = cluster_df["Longitude"].to_numpy()
-        times = cluster_df["timestamp"].to_numpy()
+        # Build space-time matrix for this day only
+        try:
+            X_scaled, scaler = _build_space_time_matrix(day_events)
+        except Exception:
+            continue
 
-        # Event details (limit to first 20 to keep JSON small)
-        event_rows = cluster_df.head(20).to_dicts()
-        event_list = [
-            {
-                "entity_id": r["entity_id"],
-                "msisdn": r["msisdn"],
-                "role": r["role"],
-                "timestamp": r["timestamp"].isoformat() if isinstance(r["timestamp"], datetime) else str(r["timestamp"]),
-                "lat": r["Latitude"],
-                "lon": r["Longitude"],
-                "tower_city": r.get("Tower_City"),
-                "cdr_id": r.get("CDR_ID"),
-            }
-            for r in event_rows
-        ]
+        # Run DBSCAN on this day's events
+        db = DBSCAN(eps=eps, min_samples=min_samples, metric="euclidean", n_jobs=-1)
+        labels = db.fit_predict(X_scaled)
 
-        hideouts.append(
-            HideoutCluster(
-                cluster_id=int(cid),
-                point_count=len(cluster_df),
-                unique_entity_count=len(entity_ids),
-                entity_ids=entity_ids,
-                center_lat=float(np.mean(lats)),
-                center_lon=float(np.mean(lons)),
-                time_span_hours=float(
-                    (times.max() - times.min()).astype('timedelta64[s]').astype(float) / 3600.0
-                ),
-                events=event_list,
+        n_clusters = len(set(labels)) - (1 if -1 in labels else 0)
+        if n_clusters == 0:
+            continue
+
+        # Analyze clusters for this day
+        day_events = day_events.with_columns(pl.Series("cluster_id", labels))
+
+        unique_labels = set(labels)
+        unique_labels.discard(-1)
+
+        for cid in sorted(unique_labels):
+            cluster_df = day_events.filter(pl.col("cluster_id") == cid)
+            entity_ids = sorted(set(cluster_df["entity_id"].to_list()))
+
+            # Only flag clusters with >= 2 distinct canonical entities
+            if len(entity_ids) < 2:
+                continue
+
+            lats = cluster_df["Latitude"].to_numpy()
+            lons = cluster_df["Longitude"].to_numpy()
+            times = cluster_df["timestamp"].to_numpy()
+
+            # Event details (limit to first 20 to keep JSON small)
+            event_rows = cluster_df.head(20).to_dicts()
+            event_list = [
+                {
+                    "entity_id": r["entity_id"],
+                    "msisdn": r["msisdn"],
+                    "role": r["role"],
+                    "timestamp": r["timestamp"].isoformat() if isinstance(r["timestamp"], datetime) else str(r["timestamp"]),
+                    "lat": r["Latitude"],
+                    "lon": r["Longitude"],
+                    "tower_city": r.get("Tower_City"),
+                    "cdr_id": r.get("CDR_ID"),
+                }
+                for r in event_rows
+            ]
+
+            time_span = float(
+                (times.max() - times.min()).astype('timedelta64[s]').astype(float) / 3600.0
+            ) if len(times) > 1 else 0.0
+
+            hideouts.append(
+                HideoutCluster(
+                    cluster_id=cluster_id_offset + int(cid),
+                    point_count=len(cluster_df),
+                    unique_entity_count=len(entity_ids),
+                    entity_ids=entity_ids,
+                    center_lat=float(np.mean(lats)),
+                    center_lon=float(np.mean(lons)),
+                    time_span_hours=time_span,
+                    events=event_list,
+                )
             )
-        )
+
+        cluster_id_offset += n_clusters
 
     # Sort by number of distinct entities (most suspicious first)
     hideouts.sort(key=lambda h: h.unique_entity_count, reverse=True)
 
     print(f"[SC] Flagged {len(hideouts)} criminal hideouts "
-          f"(clusters with >= 2 distinct entities).")
+          f"(clusters with >= 2 distinct entities across {len(unique_dates)} daily windows).")
     return hideouts
 
 

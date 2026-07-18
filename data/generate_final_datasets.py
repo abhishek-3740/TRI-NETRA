@@ -24,9 +24,9 @@ from calendar import monthrange
 SEED = 42
 np.random.seed(SEED)
 
-BASE_DIR = r"F:\ERAKSHAK\TRI-NETRA\data"
-PROC_DIR = os.path.join(BASE_DIR, "processed")
-FINAL_DIR = os.path.join(BASE_DIR, "final")
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+PROC_DIR = os.path.join(BASE_DIR, "data", "processed")
+FINAL_DIR = os.path.join(BASE_DIR, "data", "final")
 
 # Use the ALIGNED files (2025, correct phone overlap already established)
 BANK_IN = os.path.join(PROC_DIR, "bank_transactions_clean.csv")

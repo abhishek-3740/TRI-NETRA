@@ -316,19 +316,19 @@ class TemporalFusionEngine:
         b_grouped, c_grouped, i_grouped = {}, {}, {}
         for r in self.bank.to_dicts():
             s = r.get("sender_entity")
-            re = r.get("receiver_entity")
+            recv = r.get("receiver_entity")
             if s:
                 b_grouped.setdefault(s, []).append(r)
-            if re and re != s:
-                b_grouped.setdefault(re, []).append(r)
+            if recv and recv != s:
+                b_grouped.setdefault(recv, []).append(r)
             
         for r in self.cdr.to_dicts():
             ce = r.get("caller_entity")
-            re = r.get("receiver_entity")
+            recv = r.get("receiver_entity")
             if ce:
                 c_grouped.setdefault(ce, []).append(r)
-            if re and re != ce:
-                c_grouped.setdefault(re, []).append(r)
+            if recv and recv != ce:
+                c_grouped.setdefault(recv, []).append(r)
             
         for r in self.ipdr.to_dicts():
             e = r.get("entity_id")

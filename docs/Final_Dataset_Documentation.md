@@ -53,6 +53,8 @@
 | 40 | `Receiver_Account_Type` | string | 0% | Same as above |
 | 41 | `Sender_Monthly_Salary` | int | 0% | Monthly salary in INR |
 | 42 | `Receiver_Monthly_Salary` | int | 0% | Monthly salary in INR |
+| 43 | `Sender_IP_Address` | string | 0% | IP address of sender |
+| 44 | `Sender_Device_ID` | string | 0% | Device ID of sender |
 
 **Key identifiers for entity resolution:** `Sender_Phone_Number`, `Sender_UPI_ID`, `Sender_Account_Number`, `Receiver_Phone_Number`, `Receiver_UPI_ID`, `Receiver_Account_Number`
 

@@ -171,8 +171,6 @@ class EntityResolver:
                 sender_keys.append(self._key("phone", s_upi_phone))
             if s_acc:
                 sender_keys.append(self._key("account", str(s_acc)))
-            if s_name:
-                sender_keys.append(self._key("name", s_name))
 
             self._link_all(sender_keys)
 
@@ -190,8 +188,6 @@ class EntityResolver:
                 receiver_keys.append(self._key("phone", r_upi_phone))
             if r_acc:
                 receiver_keys.append(self._key("account", str(r_acc)))
-            if r_name:
-                receiver_keys.append(self._key("name", r_name))
 
             self._link_all(receiver_keys)
 
@@ -214,8 +210,6 @@ class EntityResolver:
                 caller_keys.append(self._key("phone", c_phone))
             if c_imei:
                 caller_keys.append(self._key("imei", c_imei))
-            if c_name:
-                caller_keys.append(self._key("name", str(c_name).strip().lower()))
 
             self._link_all(caller_keys)
 
@@ -226,8 +220,6 @@ class EntityResolver:
             receiver_keys = []
             if rec_phone:
                 receiver_keys.append(self._key("phone", rec_phone))
-            if rec_name:
-                receiver_keys.append(self._key("name", str(rec_name).strip().lower()))
 
             self._link_all(receiver_keys)
 
@@ -252,12 +244,8 @@ class EntityResolver:
                 keys.append(self._key("imei", imei))
             if pub_ip:
                 keys.append(self._key("ip", pub_ip))
-            if priv_ip:
-                keys.append(self._key("ip", priv_ip))
             if dev_id:
                 keys.append(self._key("device", str(dev_id)))
-            if name:
-                keys.append(self._key("name", str(name).strip().lower()))
 
             self._link_all(keys)
 
@@ -307,41 +295,63 @@ class EntityResolver:
             for r in self._bank_df.iter_rows(named=True):
                 s_phone = _norm_phone(r.get("Sender_Phone_Number"))
                 s_city = _norm_city(r.get("Sender_City"))
+                s_name = _norm_name(r.get("Sender_Customer_Name"))
+                s_upi = r.get("Sender_UPI_ID")
+                
                 r_phone = _norm_phone(r.get("Receiver_Phone_Number"))
                 r_city = _norm_city(r.get("Receiver_City"))
+                r_name = _norm_name(r.get("Receiver_Customer_Name"))
+                r_upi = r.get("Receiver_UPI_ID")
 
-                if s_phone and s_city:
+                if s_phone:
                     root = self.find_entity_for_phone(s_phone)
                     if root:
-                        self.entities[root]["cities"].add(s_city)
-                if r_phone and r_city:
+                        if s_city: self.entities[root]["cities"].add(s_city)
+                        if s_name: self.entities[root]["names"].add(s_name)
+                        if s_upi: self.entities[root]["upis"].add(s_upi)
+
+                if r_phone:
                     root = self.find_entity_for_phone(r_phone)
                     if root:
-                        self.entities[root]["cities"].add(r_city)
+                        if r_city: self.entities[root]["cities"].add(r_city)
+                        if r_name: self.entities[root]["names"].add(r_name)
+                        if r_upi: self.entities[root]["upis"].add(r_upi)
 
         if self._cdr_df is not None:
             for r in self._cdr_df.iter_rows(named=True):
                 c_phone = _norm_phone(r.get("Caller_MSISDN"))
                 tower_city = _norm_city(r.get("Tower_City"))
                 net_provider = _norm_network(r.get("Network_Provider"))
+                c_name = r.get("Caller_Name")
+
+                r_phone = _norm_phone(r.get("Receiver_MSISDN"))
+                r_name = r.get("Receiver_Name")
 
                 if c_phone:
                     root = self.find_entity_for_phone(c_phone)
                     if root:
-                        if tower_city:
-                            self.entities[root]["cities"].add(tower_city)
-                        if net_provider:
-                            self.entities[root]["network_providers"].add(net_provider)
+                        if tower_city: self.entities[root]["cities"].add(tower_city)
+                        if net_provider: self.entities[root]["network_providers"].add(net_provider)
+                        if c_name: self.entities[root]["names"].add(str(c_name).strip().lower())
+                
+                if r_phone:
+                    root = self.find_entity_for_phone(r_phone)
+                    if root:
+                        if r_name: self.entities[root]["names"].add(str(r_name).strip().lower())
 
         if self._ipdr_df is not None:
             for r in self._ipdr_df.iter_rows(named=True):
                 phone = _norm_phone(r.get("User_MSISDN"))
                 ip_city = _norm_city(r.get("IP_Location_City"))
+                priv_ip = _norm_ip(r.get("Private_IP_Address"))
+                name = r.get("User_Name")
 
-                if phone and ip_city:
+                if phone:
                     root = self.find_entity_for_phone(phone)
                     if root:
-                        self.entities[root]["cities"].add(ip_city)
+                        if ip_city: self.entities[root]["cities"].add(ip_city)
+                        if priv_ip: self.entities[root]["ips"].add(priv_ip)
+                        if name: self.entities[root]["names"].add(str(name).strip().lower())
 
     def _share_weak_identifier(self, root_a: str, root_b: str) -> bool:
         """

@@ -1,0 +1,1443 @@
+[
+  {
+    "entity_id": "phone:6554092657",
+    "window_start": "2025-11-07T12:34:00",
+    "window_end": "2025-11-07T13:34:00",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 1,
+    "is_injected": true,
+    "risk_score": 150,
+    "bank_ids": [
+      "INJ_TXN_0019"
+    ],
+    "cdr_ids": [
+      "INJ_CDR_0019"
+    ],
+    "ipdr_ids": [
+      "INJ_IPDR_0019"
+    ]
+  },
+  {
+    "entity_id": "phone:6224202774",
+    "window_start": "2025-05-16T11:14:00",
+    "window_end": "2025-05-16T12:14:00",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 1,
+    "is_injected": true,
+    "risk_score": 150,
+    "bank_ids": [
+      "INJ_TXN_0008"
+    ],
+    "cdr_ids": [
+      "INJ_CDR_0008"
+    ],
+    "ipdr_ids": [
+      "INJ_IPDR_0008"
+    ]
+  },
+  {
+    "entity_id": "phone:7101589949",
+    "window_start": "2025-03-09T13:54:00",
+    "window_end": "2025-03-09T14:54:00",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 1,
+    "is_injected": true,
+    "risk_score": 150,
+    "bank_ids": [
+      "INJ_TXN_0033"
+    ],
+    "cdr_ids": [
+      "INJ_CDR_0033"
+    ],
+    "ipdr_ids": [
+      "INJ_IPDR_0033"
+    ]
+  },
+  {
+    "entity_id": "phone:6952074414",
+    "window_start": "2025-02-14T08:58:00",
+    "window_end": "2025-02-14T09:58:00",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 1,
+    "is_injected": true,
+    "risk_score": 150,
+    "bank_ids": [
+      "INJ_TXN_0032"
+    ],
+    "cdr_ids": [
+      "INJ_CDR_0032"
+    ],
+    "ipdr_ids": [
+      "INJ_IPDR_0032"
+    ]
+  },
+  {
+    "entity_id": "phone:6855318594",
+    "window_start": "2025-09-16T15:40:00",
+    "window_end": "2025-09-16T16:40:00",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 1,
+    "is_injected": true,
+    "risk_score": 150,
+    "bank_ids": [
+      "INJ_TXN_0030"
+    ],
+    "cdr_ids": [
+      "INJ_CDR_0030"
+    ],
+    "ipdr_ids": [
+      "INJ_IPDR_0030"
+    ]
+  },
+  {
+    "entity_id": "phone:6419503238",
+    "window_start": "2025-09-23T19:21:00",
+    "window_end": "2025-09-23T20:21:00",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 1,
+    "is_injected": true,
+    "risk_score": 150,
+    "bank_ids": [
+      "INJ_TXN_0016"
+    ],
+    "cdr_ids": [
+      "INJ_CDR_0016"
+    ],
+    "ipdr_ids": [
+      "INJ_IPDR_0016"
+    ]
+  },
+  {
+    "entity_id": "phone:6181430239",
+    "window_start": "2025-12-10T11:26:00",
+    "window_end": "2025-12-10T12:26:00",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 1,
+    "is_injected": true,
+    "risk_score": 150,
+    "bank_ids": [
+      "INJ_TXN_0005"
+    ],
+    "cdr_ids": [
+      "INJ_CDR_0005"
+    ],
+    "ipdr_ids": [
+      "INJ_IPDR_0005"
+    ]
+  },
+  {
+    "entity_id": "phone:7156536541",
+    "window_start": "2025-05-04T15:00:00",
+    "window_end": "2025-05-04T16:00:00",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 1,
+    "is_injected": true,
+    "risk_score": 150,
+    "bank_ids": [
+      "INJ_TXN_0034"
+    ],
+    "cdr_ids": [
+      "INJ_CDR_0034"
+    ],
+    "ipdr_ids": [
+      "INJ_IPDR_0034"
+    ]
+  },
+  {
+    "entity_id": "phone:6060422207",
+    "window_start": "2025-02-03T19:37:00",
+    "window_end": "2025-02-03T20:37:00",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 1,
+    "is_injected": true,
+    "risk_score": 150,
+    "bank_ids": [
+      "INJ_TXN_0002"
+    ],
+    "cdr_ids": [
+      "INJ_CDR_0002"
+    ],
+    "ipdr_ids": [
+      "INJ_IPDR_0002"
+    ]
+  },
+  {
+    "entity_id": "phone:6643359311",
+    "window_start": "2025-10-10T13:34:00",
+    "window_end": "2025-10-10T14:34:00",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 1,
+    "is_injected": true,
+    "risk_score": 150,
+    "bank_ids": [
+      "INJ_TXN_0023"
+    ],
+    "cdr_ids": [
+      "INJ_CDR_0023"
+    ],
+    "ipdr_ids": [
+      "INJ_IPDR_0023"
+    ]
+  },
+  {
+    "entity_id": "phone:6300063509",
+    "window_start": "2025-06-13T15:43:00",
+    "window_end": "2025-06-13T16:43:00",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 1,
+    "is_injected": true,
+    "risk_score": 150,
+    "bank_ids": [
+      "INJ_TXN_0014"
+    ],
+    "cdr_ids": [
+      "INJ_CDR_0014"
+    ],
+    "ipdr_ids": [
+      "INJ_IPDR_0014"
+    ]
+  },
+  {
+    "entity_id": "phone:6584243753",
+    "window_start": "2025-06-24T14:09:00",
+    "window_end": "2025-06-24T15:09:00",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 1,
+    "is_injected": true,
+    "risk_score": 150,
+    "bank_ids": [
+      "INJ_TXN_0022"
+    ],
+    "cdr_ids": [
+      "INJ_CDR_0022"
+    ],
+    "ipdr_ids": [
+      "INJ_IPDR_0022"
+    ]
+  },
+  {
+    "entity_id": "phone:6309299966",
+    "window_start": "2025-12-04T16:12:00",
+    "window_end": "2025-12-04T17:12:00",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 1,
+    "is_injected": true,
+    "risk_score": 150,
+    "bank_ids": [
+      "INJ_TXN_0015"
+    ],
+    "cdr_ids": [
+      "INJ_CDR_0015"
+    ],
+    "ipdr_ids": [
+      "INJ_IPDR_0015"
+    ]
+  },
+  {
+    "entity_id": "phone:6560975165",
+    "window_start": "2025-02-05T11:21:00",
+    "window_end": "2025-02-05T12:21:00",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 1,
+    "is_injected": true,
+    "risk_score": 150,
+    "bank_ids": [
+      "INJ_TXN_0020"
+    ],
+    "cdr_ids": [
+      "INJ_CDR_0020"
+    ],
+    "ipdr_ids": [
+      "INJ_IPDR_0020"
+    ]
+  },
+  {
+    "entity_id": "phone:6907263270",
+    "window_start": "2025-11-25T09:40:00",
+    "window_end": "2025-11-25T10:40:00",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 1,
+    "is_injected": true,
+    "risk_score": 150,
+    "bank_ids": [
+      "INJ_TXN_0031"
+    ],
+    "cdr_ids": [
+      "INJ_CDR_0031"
+    ],
+    "ipdr_ids": [
+      "INJ_IPDR_0031"
+    ]
+  },
+  {
+    "entity_id": "phone:6187949263",
+    "window_start": "2025-06-01T13:33:00",
+    "window_end": "2025-06-01T14:33:00",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 1,
+    "is_injected": true,
+    "risk_score": 150,
+    "bank_ids": [
+      "INJ_TXN_0006"
+    ],
+    "cdr_ids": [
+      "INJ_CDR_0006"
+    ],
+    "ipdr_ids": [
+      "INJ_IPDR_0006"
+    ]
+  },
+  {
+    "entity_id": "phone:7214168272",
+    "window_start": "2025-07-07T19:52:00",
+    "window_end": "2025-07-07T20:52:00",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 1,
+    "is_injected": true,
+    "risk_score": 150,
+    "bank_ids": [
+      "INJ_TXN_0035"
+    ],
+    "cdr_ids": [
+      "INJ_CDR_0035"
+    ],
+    "ipdr_ids": [
+      "INJ_IPDR_0035"
+    ]
+  },
+  {
+    "entity_id": "phone:6084983706",
+    "window_start": "2025-03-08T14:15:00",
+    "window_end": "2025-03-08T15:15:00",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 1,
+    "is_injected": true,
+    "risk_score": 150,
+    "bank_ids": [
+      "INJ_TXN_0003"
+    ],
+    "cdr_ids": [
+      "INJ_CDR_0003"
+    ],
+    "ipdr_ids": [
+      "INJ_IPDR_0003"
+    ]
+  },
+  {
+    "entity_id": "phone:6581366088",
+    "window_start": "2025-01-01T10:35:00",
+    "window_end": "2025-01-01T11:35:00",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 1,
+    "is_injected": true,
+    "risk_score": 150,
+    "bank_ids": [
+      "INJ_TXN_0021"
+    ],
+    "cdr_ids": [
+      "INJ_CDR_0021"
+    ],
+    "ipdr_ids": [
+      "INJ_IPDR_0021"
+    ]
+  },
+  {
+    "entity_id": "phone:7394155665",
+    "window_start": "2025-06-13T10:59:00",
+    "window_end": "2025-06-13T11:59:00",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 1,
+    "is_injected": true,
+    "risk_score": 150,
+    "bank_ids": [
+      "INJ_TXN_0040"
+    ],
+    "cdr_ids": [
+      "INJ_CDR_0040"
+    ],
+    "ipdr_ids": [
+      "INJ_IPDR_0040"
+    ]
+  },
+  {
+    "entity_id": "phone:6259148611",
+    "window_start": "2025-12-25T11:12:00",
+    "window_end": "2025-12-25T12:12:00",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 1,
+    "is_injected": true,
+    "risk_score": 150,
+    "bank_ids": [
+      "INJ_TXN_0011"
+    ],
+    "cdr_ids": [
+      "INJ_CDR_0011"
+    ],
+    "ipdr_ids": [
+      "INJ_IPDR_0011"
+    ]
+  },
+  {
+    "entity_id": "phone:6746930885",
+    "window_start": "2025-10-02T19:27:00",
+    "window_end": "2025-10-02T20:27:00",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 1,
+    "is_injected": true,
+    "risk_score": 150,
+    "bank_ids": [
+      "INJ_TXN_0026"
+    ],
+    "cdr_ids": [
+      "INJ_CDR_0026"
+    ],
+    "ipdr_ids": [
+      "INJ_IPDR_0026"
+    ]
+  },
+  {
+    "entity_id": "phone:6716145567",
+    "window_start": "2025-10-24T15:40:00",
+    "window_end": "2025-10-24T16:40:00",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 1,
+    "is_injected": true,
+    "risk_score": 150,
+    "bank_ids": [
+      "INJ_TXN_0025"
+    ],
+    "cdr_ids": [
+      "INJ_CDR_0025"
+    ],
+    "ipdr_ids": [
+      "INJ_IPDR_0025"
+    ]
+  },
+  {
+    "entity_id": "phone:7273731310",
+    "window_start": "2025-10-05T12:14:00",
+    "window_end": "2025-10-05T13:14:00",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 1,
+    "is_injected": true,
+    "risk_score": 150,
+    "bank_ids": [
+      "INJ_TXN_0038"
+    ],
+    "cdr_ids": [
+      "INJ_CDR_0038"
+    ],
+    "ipdr_ids": [
+      "INJ_IPDR_0038"
+    ]
+  },
+  {
+    "entity_id": "phone:8808220248",
+    "window_start": "2025-04-16T16:22:00",
+    "window_end": "2025-04-16T17:22:00",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 1,
+    "is_injected": true,
+    "risk_score": 150,
+    "bank_ids": [
+      "INJ_TXN_0039"
+    ],
+    "cdr_ids": [
+      "INJ_CDR_0039"
+    ],
+    "ipdr_ids": [
+      "INJ_IPDR_0039"
+    ]
+  },
+  {
+    "entity_id": "phone:7246906635",
+    "window_start": "2025-11-10T19:42:00",
+    "window_end": "2025-11-10T20:42:00",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 1,
+    "is_injected": true,
+    "risk_score": 150,
+    "bank_ids": [
+      "INJ_TXN_0036"
+    ],
+    "cdr_ids": [
+      "INJ_CDR_0036"
+    ],
+    "ipdr_ids": [
+      "INJ_IPDR_0036"
+    ]
+  },
+  {
+    "entity_id": "phone:6425264630",
+    "window_start": "2025-09-07T12:06:00",
+    "window_end": "2025-09-07T13:06:00",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 1,
+    "is_injected": true,
+    "risk_score": 150,
+    "bank_ids": [
+      "INJ_TXN_0017"
+    ],
+    "cdr_ids": [
+      "INJ_CDR_0017"
+    ],
+    "ipdr_ids": [
+      "INJ_IPDR_0017"
+    ]
+  },
+  {
+    "entity_id": "phone:6207440957",
+    "window_start": "2025-03-02T11:35:00",
+    "window_end": "2025-03-02T12:35:00",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 1,
+    "is_injected": true,
+    "risk_score": 150,
+    "bank_ids": [
+      "INJ_TXN_0007"
+    ],
+    "cdr_ids": [
+      "INJ_CDR_0007"
+    ],
+    "ipdr_ids": [
+      "INJ_IPDR_0007"
+    ]
+  },
+  {
+    "entity_id": "phone:6540053693",
+    "window_start": "2025-06-27T12:59:00",
+    "window_end": "2025-06-27T13:59:00",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 1,
+    "is_injected": true,
+    "risk_score": 150,
+    "bank_ids": [
+      "INJ_TXN_0018"
+    ],
+    "cdr_ids": [
+      "INJ_CDR_0018"
+    ],
+    "ipdr_ids": [
+      "INJ_IPDR_0018"
+    ]
+  },
+  {
+    "entity_id": "phone:6818128040",
+    "window_start": "2025-12-23T08:35:00",
+    "window_end": "2025-12-23T09:35:00",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 1,
+    "is_injected": true,
+    "risk_score": 150,
+    "bank_ids": [
+      "INJ_TXN_0028"
+    ],
+    "cdr_ids": [
+      "INJ_CDR_0028"
+    ],
+    "ipdr_ids": [
+      "INJ_IPDR_0028"
+    ]
+  },
+  {
+    "entity_id": "phone:6294342584",
+    "window_start": "2025-04-27T14:02:00",
+    "window_end": "2025-04-27T15:02:00",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 1,
+    "is_injected": true,
+    "risk_score": 150,
+    "bank_ids": [
+      "INJ_TXN_0013"
+    ],
+    "cdr_ids": [
+      "INJ_CDR_0013"
+    ],
+    "ipdr_ids": [
+      "INJ_IPDR_0013"
+    ]
+  },
+  {
+    "entity_id": "phone:6706456953",
+    "window_start": "2025-02-08T14:33:00",
+    "window_end": "2025-02-08T15:33:00",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 1,
+    "is_injected": true,
+    "risk_score": 150,
+    "bank_ids": [
+      "INJ_TXN_0024"
+    ],
+    "cdr_ids": [
+      "INJ_CDR_0024"
+    ],
+    "ipdr_ids": [
+      "INJ_IPDR_0024"
+    ]
+  },
+  {
+    "entity_id": "phone:7250328744",
+    "window_start": "2025-04-24T12:30:00",
+    "window_end": "2025-04-24T13:30:00",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 1,
+    "is_injected": true,
+    "risk_score": 150,
+    "bank_ids": [
+      "INJ_TXN_0037"
+    ],
+    "cdr_ids": [
+      "INJ_CDR_0037"
+    ],
+    "ipdr_ids": [
+      "INJ_IPDR_0037"
+    ]
+  },
+  {
+    "entity_id": "phone:6237507351",
+    "window_start": "2025-01-21T17:02:00",
+    "window_end": "2025-01-21T18:02:00",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 1,
+    "is_injected": true,
+    "risk_score": 150,
+    "bank_ids": [
+      "INJ_TXN_0009"
+    ],
+    "cdr_ids": [
+      "INJ_CDR_0009"
+    ],
+    "ipdr_ids": [
+      "INJ_IPDR_0009"
+    ]
+  },
+  {
+    "entity_id": "phone:6000451669",
+    "window_start": "2025-02-20T11:17:00",
+    "window_end": "2025-02-20T12:17:00",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 1,
+    "is_injected": true,
+    "risk_score": 150,
+    "bank_ids": [
+      "INJ_TXN_0001"
+    ],
+    "cdr_ids": [
+      "INJ_CDR_0001"
+    ],
+    "ipdr_ids": [
+      "INJ_IPDR_0001"
+    ]
+  },
+  {
+    "entity_id": "phone:6288286822",
+    "window_start": "2025-03-26T19:42:00",
+    "window_end": "2025-03-26T20:42:00",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 1,
+    "is_injected": true,
+    "risk_score": 150,
+    "bank_ids": [
+      "INJ_TXN_0012"
+    ],
+    "cdr_ids": [
+      "INJ_CDR_0012"
+    ],
+    "ipdr_ids": [
+      "INJ_IPDR_0012"
+    ]
+  },
+  {
+    "entity_id": "phone:6242180090",
+    "window_start": "2025-01-14T21:05:00",
+    "window_end": "2025-01-14T22:05:00",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 1,
+    "is_injected": true,
+    "risk_score": 150,
+    "bank_ids": [
+      "INJ_TXN_0010"
+    ],
+    "cdr_ids": [
+      "INJ_CDR_0010"
+    ],
+    "ipdr_ids": [
+      "INJ_IPDR_0010"
+    ]
+  },
+  {
+    "entity_id": "phone:6781375555",
+    "window_start": "2025-09-20T21:28:00",
+    "window_end": "2025-09-20T22:28:00",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 1,
+    "is_injected": true,
+    "risk_score": 150,
+    "bank_ids": [
+      "INJ_TXN_0027"
+    ],
+    "cdr_ids": [
+      "INJ_CDR_0027"
+    ],
+    "ipdr_ids": [
+      "INJ_IPDR_0027"
+    ]
+  },
+  {
+    "entity_id": "phone:6827756621",
+    "window_start": "2025-09-13T10:28:00",
+    "window_end": "2025-09-13T11:28:00",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 1,
+    "is_injected": true,
+    "risk_score": 150,
+    "bank_ids": [
+      "INJ_TXN_0029"
+    ],
+    "cdr_ids": [
+      "INJ_CDR_0029"
+    ],
+    "ipdr_ids": [
+      "INJ_IPDR_0029"
+    ]
+  },
+  {
+    "entity_id": "phone:6150872743",
+    "window_start": "2025-04-16T14:30:00",
+    "window_end": "2025-04-16T15:30:00",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 1,
+    "is_injected": true,
+    "risk_score": 150,
+    "bank_ids": [
+      "INJ_TXN_0004"
+    ],
+    "cdr_ids": [
+      "INJ_CDR_0004"
+    ],
+    "ipdr_ids": [
+      "INJ_IPDR_0004"
+    ]
+  },
+  {
+    "entity_id": "phone:7700487240",
+    "window_start": "2025-07-29T08:37:11",
+    "window_end": "2025-07-29T09:37:11",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 0,
+    "is_injected": false,
+    "risk_score": 30,
+    "bank_ids": [
+      "TXN0000057323"
+    ],
+    "cdr_ids": [
+      "CDR_020964"
+    ],
+    "ipdr_ids": []
+  },
+  {
+    "entity_id": "phone:7288633010",
+    "window_start": "2025-04-06T06:35:56",
+    "window_end": "2025-04-06T07:35:56",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 0,
+    "is_injected": false,
+    "risk_score": 30,
+    "bank_ids": [
+      "TXN0000026266"
+    ],
+    "cdr_ids": [
+      "CDR_039421"
+    ],
+    "ipdr_ids": []
+  },
+  {
+    "entity_id": "phone:7164104696",
+    "window_start": "2025-09-17T13:49:12",
+    "window_end": "2025-09-17T14:49:12",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 0,
+    "is_injected": false,
+    "risk_score": 30,
+    "bank_ids": [
+      "TXN0000070868"
+    ],
+    "cdr_ids": [
+      "CDR_031748"
+    ],
+    "ipdr_ids": []
+  },
+  {
+    "entity_id": "phone:7765914396",
+    "window_start": "2025-12-20T17:20:51",
+    "window_end": "2025-12-20T18:20:51",
+    "bank_count": 2,
+    "cdr_count": 0,
+    "ipdr_count": 1,
+    "is_injected": false,
+    "risk_score": 30,
+    "bank_ids": [
+      "TXN0000096891",
+      "TXN0000096892"
+    ],
+    "cdr_ids": [],
+    "ipdr_ids": [
+      "IPDR_029326"
+    ]
+  },
+  {
+    "entity_id": "phone:8567684295",
+    "window_start": "2025-09-11T06:30:54",
+    "window_end": "2025-09-11T07:30:54",
+    "bank_count": 1,
+    "cdr_count": 0,
+    "ipdr_count": 1,
+    "is_injected": false,
+    "risk_score": 30,
+    "bank_ids": [
+      "TXN0000069187"
+    ],
+    "cdr_ids": [],
+    "ipdr_ids": [
+      "IPDR_013181"
+    ]
+  },
+  {
+    "entity_id": "phone:6752906625",
+    "window_start": "2025-01-02T21:17:35",
+    "window_end": "2025-01-02T22:17:35",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 0,
+    "is_injected": false,
+    "risk_score": 30,
+    "bank_ids": [
+      "TXN0000000545"
+    ],
+    "cdr_ids": [
+      "CDR_030316"
+    ],
+    "ipdr_ids": []
+  },
+  {
+    "entity_id": "phone:9520676727",
+    "window_start": "2025-09-21T04:09:21",
+    "window_end": "2025-09-21T05:09:21",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 0,
+    "is_injected": false,
+    "risk_score": 30,
+    "bank_ids": [
+      "TXN0000071877"
+    ],
+    "cdr_ids": [
+      "CDR_068081"
+    ],
+    "ipdr_ids": []
+  },
+  {
+    "entity_id": "phone:9396911828",
+    "window_start": "2025-01-07T23:41:18",
+    "window_end": "2025-01-08T00:41:18",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 0,
+    "is_injected": false,
+    "risk_score": 30,
+    "bank_ids": [
+      "TXN0000001976"
+    ],
+    "cdr_ids": [
+      "CDR_022223"
+    ],
+    "ipdr_ids": []
+  },
+  {
+    "entity_id": "phone:8901852904",
+    "window_start": "2025-12-27T00:46:02",
+    "window_end": "2025-12-27T01:46:02",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 0,
+    "is_injected": false,
+    "risk_score": 30,
+    "bank_ids": [
+      "TXN0000098611"
+    ],
+    "cdr_ids": [
+      "CDR_009501"
+    ],
+    "ipdr_ids": []
+  },
+  {
+    "entity_id": "phone:6300063509",
+    "window_start": "2025-06-26T10:15:21",
+    "window_end": "2025-06-26T11:15:21",
+    "bank_count": 1,
+    "cdr_count": 0,
+    "ipdr_count": 1,
+    "is_injected": false,
+    "risk_score": 30,
+    "bank_ids": [
+      "TXN0000048234"
+    ],
+    "cdr_ids": [],
+    "ipdr_ids": [
+      "IPDR_037356"
+    ]
+  },
+  {
+    "entity_id": "phone:7779145837",
+    "window_start": "2025-12-12T09:46:17",
+    "window_end": "2025-12-12T10:46:17",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 0,
+    "is_injected": false,
+    "risk_score": 30,
+    "bank_ids": [
+      "TXN0000094617"
+    ],
+    "cdr_ids": [
+      "CDR_047889"
+    ],
+    "ipdr_ids": []
+  },
+  {
+    "entity_id": "phone:6710095087",
+    "window_start": "2025-08-03T10:29:28",
+    "window_end": "2025-08-03T11:29:28",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 0,
+    "is_injected": false,
+    "risk_score": 30,
+    "bank_ids": [
+      "TXN0000058708"
+    ],
+    "cdr_ids": [
+      "CDR_025337"
+    ],
+    "ipdr_ids": []
+  },
+  {
+    "entity_id": "phone:8253233543",
+    "window_start": "2025-05-14T16:55:27",
+    "window_end": "2025-05-14T17:55:27",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 0,
+    "is_injected": false,
+    "risk_score": 30,
+    "bank_ids": [
+      "TXN0000036587"
+    ],
+    "cdr_ids": [
+      "CDR_042968"
+    ],
+    "ipdr_ids": []
+  },
+  {
+    "entity_id": "phone:6866537572",
+    "window_start": "2025-05-17T04:49:51",
+    "window_end": "2025-05-17T05:49:51",
+    "bank_count": 1,
+    "cdr_count": 0,
+    "ipdr_count": 1,
+    "is_injected": false,
+    "risk_score": 30,
+    "bank_ids": [
+      "TXN0000037276"
+    ],
+    "cdr_ids": [],
+    "ipdr_ids": [
+      "IPDR_004569"
+    ]
+  },
+  {
+    "entity_id": "phone:9498373109",
+    "window_start": "2025-04-17T22:46:32",
+    "window_end": "2025-04-17T23:46:32",
+    "bank_count": 1,
+    "cdr_count": 0,
+    "ipdr_count": 1,
+    "is_injected": false,
+    "risk_score": 30,
+    "bank_ids": [
+      "TXN0000029346"
+    ],
+    "cdr_ids": [],
+    "ipdr_ids": [
+      "IPDR_014326"
+    ]
+  },
+  {
+    "entity_id": "phone:6554101852",
+    "window_start": "2025-01-25T10:44:55",
+    "window_end": "2025-01-25T11:44:55",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 0,
+    "is_injected": false,
+    "risk_score": 30,
+    "bank_ids": [
+      "TXN0000006859"
+    ],
+    "cdr_ids": [
+      "CDR_008188"
+    ],
+    "ipdr_ids": []
+  },
+  {
+    "entity_id": "phone:7064409004",
+    "window_start": "2025-08-11T18:04:23",
+    "window_end": "2025-08-11T19:04:23",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 0,
+    "is_injected": false,
+    "risk_score": 30,
+    "bank_ids": [
+      "TXN0000061027"
+    ],
+    "cdr_ids": [
+      "CDR_006550"
+    ],
+    "ipdr_ids": []
+  },
+  {
+    "entity_id": "phone:7669267123",
+    "window_start": "2025-07-02T21:05:34",
+    "window_end": "2025-07-02T22:05:34",
+    "bank_count": 1,
+    "cdr_count": 0,
+    "ipdr_count": 1,
+    "is_injected": false,
+    "risk_score": 30,
+    "bank_ids": [
+      "TXN0000050084"
+    ],
+    "cdr_ids": [],
+    "ipdr_ids": [
+      "IPDR_048280"
+    ]
+  },
+  {
+    "entity_id": "phone:7813224629",
+    "window_start": "2025-01-28T03:48:50",
+    "window_end": "2025-01-28T04:48:50",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 0,
+    "is_injected": false,
+    "risk_score": 30,
+    "bank_ids": [
+      "TXN0000007605"
+    ],
+    "cdr_ids": [
+      "CDR_073108"
+    ],
+    "ipdr_ids": []
+  },
+  {
+    "entity_id": "phone:9477846389",
+    "window_start": "2025-03-13T11:24:21",
+    "window_end": "2025-03-13T12:24:21",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 0,
+    "is_injected": false,
+    "risk_score": 30,
+    "bank_ids": [
+      "TXN0000019840"
+    ],
+    "cdr_ids": [
+      "CDR_046399"
+    ],
+    "ipdr_ids": []
+  },
+  {
+    "entity_id": "phone:7057627108",
+    "window_start": "2025-11-11T13:23:35",
+    "window_end": "2025-11-11T14:23:35",
+    "bank_count": 1,
+    "cdr_count": 0,
+    "ipdr_count": 1,
+    "is_injected": false,
+    "risk_score": 30,
+    "bank_ids": [
+      "TXN0000086070"
+    ],
+    "cdr_ids": [],
+    "ipdr_ids": [
+      "IPDR_046050"
+    ]
+  },
+  {
+    "entity_id": "phone:7230153967",
+    "window_start": "2025-11-22T09:30:34",
+    "window_end": "2025-11-22T10:30:34",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 0,
+    "is_injected": false,
+    "risk_score": 30,
+    "bank_ids": [
+      "TXN0000089096"
+    ],
+    "cdr_ids": [
+      "CDR_056721"
+    ],
+    "ipdr_ids": []
+  },
+  {
+    "entity_id": "phone:8106399756",
+    "window_start": "2025-11-22T20:24:35",
+    "window_end": "2025-11-22T21:24:35",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 0,
+    "is_injected": false,
+    "risk_score": 30,
+    "bank_ids": [
+      "TXN0000089241"
+    ],
+    "cdr_ids": [
+      "CDR_000446"
+    ],
+    "ipdr_ids": []
+  },
+  {
+    "entity_id": "phone:9530476674",
+    "window_start": "2025-01-12T01:09:39",
+    "window_end": "2025-01-12T02:09:39",
+    "bank_count": 1,
+    "cdr_count": 0,
+    "ipdr_count": 1,
+    "is_injected": false,
+    "risk_score": 30,
+    "bank_ids": [
+      "TXN0000003115"
+    ],
+    "cdr_ids": [],
+    "ipdr_ids": [
+      "IPDR_041760"
+    ]
+  },
+  {
+    "entity_id": "phone:7216941561",
+    "window_start": "2025-09-18T08:18:21",
+    "window_end": "2025-09-18T09:18:21",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 0,
+    "is_injected": false,
+    "risk_score": 30,
+    "bank_ids": [
+      "TXN0000071078"
+    ],
+    "cdr_ids": [
+      "CDR_012552"
+    ],
+    "ipdr_ids": []
+  },
+  {
+    "entity_id": "phone:7993022014",
+    "window_start": "2025-01-12T08:28:01",
+    "window_end": "2025-01-12T09:28:01",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 0,
+    "is_injected": false,
+    "risk_score": 30,
+    "bank_ids": [
+      "TXN0000003198"
+    ],
+    "cdr_ids": [
+      "CDR_092820"
+    ],
+    "ipdr_ids": []
+  },
+  {
+    "entity_id": "phone:8808220248",
+    "window_start": "2025-07-21T14:09:50",
+    "window_end": "2025-07-21T15:09:50",
+    "bank_count": 1,
+    "cdr_count": 0,
+    "ipdr_count": 1,
+    "is_injected": false,
+    "risk_score": 30,
+    "bank_ids": [
+      "TXN0000055181"
+    ],
+    "cdr_ids": [],
+    "ipdr_ids": [
+      "IPDR_008716"
+    ]
+  },
+  {
+    "entity_id": "phone:9917377313",
+    "window_start": "2025-04-24T06:56:47",
+    "window_end": "2025-04-24T07:56:47",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 0,
+    "is_injected": false,
+    "risk_score": 30,
+    "bank_ids": [
+      "TXN0000031049"
+    ],
+    "cdr_ids": [
+      "CDR_051452"
+    ],
+    "ipdr_ids": []
+  },
+  {
+    "entity_id": "phone:9938247444",
+    "window_start": "2025-05-13T08:40:38",
+    "window_end": "2025-05-13T09:40:38",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 0,
+    "is_injected": false,
+    "risk_score": 30,
+    "bank_ids": [
+      "TXN0000036248"
+    ],
+    "cdr_ids": [
+      "CDR_057389"
+    ],
+    "ipdr_ids": []
+  },
+  {
+    "entity_id": "phone:9390214465",
+    "window_start": "2025-03-14T01:14:54",
+    "window_end": "2025-03-14T02:14:54",
+    "bank_count": 1,
+    "cdr_count": 0,
+    "ipdr_count": 1,
+    "is_injected": false,
+    "risk_score": 30,
+    "bank_ids": [
+      "TXN0000019992"
+    ],
+    "cdr_ids": [],
+    "ipdr_ids": [
+      "IPDR_050237"
+    ]
+  },
+  {
+    "entity_id": "phone:9897061220",
+    "window_start": "2025-12-29T08:17:47",
+    "window_end": "2025-12-29T09:17:47",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 0,
+    "is_injected": false,
+    "risk_score": 30,
+    "bank_ids": [
+      "TXN0000099255"
+    ],
+    "cdr_ids": [
+      "CDR_088475"
+    ],
+    "ipdr_ids": []
+  },
+  {
+    "entity_id": "phone:7438344459",
+    "window_start": "2025-07-04T19:19:14",
+    "window_end": "2025-07-04T20:19:14",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 0,
+    "is_injected": false,
+    "risk_score": 30,
+    "bank_ids": [
+      "TXN0000050581"
+    ],
+    "cdr_ids": [
+      "CDR_038212"
+    ],
+    "ipdr_ids": []
+  },
+  {
+    "entity_id": "phone:8722680284",
+    "window_start": "2025-12-12T04:45:10",
+    "window_end": "2025-12-12T05:45:10",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 0,
+    "is_injected": false,
+    "risk_score": 30,
+    "bank_ids": [
+      "TXN0000094550"
+    ],
+    "cdr_ids": [
+      "CDR_031435"
+    ],
+    "ipdr_ids": []
+  },
+  {
+    "entity_id": "phone:7780325783",
+    "window_start": "2025-09-12T05:24:09",
+    "window_end": "2025-09-12T06:24:09",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 0,
+    "is_injected": false,
+    "risk_score": 30,
+    "bank_ids": [
+      "TXN0000069448"
+    ],
+    "cdr_ids": [
+      "CDR_033832"
+    ],
+    "ipdr_ids": []
+  },
+  {
+    "entity_id": "phone:8941994994",
+    "window_start": "2025-11-05T10:18:42",
+    "window_end": "2025-11-05T11:18:42",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 0,
+    "is_injected": false,
+    "risk_score": 30,
+    "bank_ids": [
+      "TXN0000084384"
+    ],
+    "cdr_ids": [
+      "CDR_094714"
+    ],
+    "ipdr_ids": []
+  },
+  {
+    "entity_id": "phone:6876980527",
+    "window_start": "2025-10-01T22:25:24",
+    "window_end": "2025-10-01T23:25:24",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 0,
+    "is_injected": false,
+    "risk_score": 30,
+    "bank_ids": [
+      "TXN0000074795"
+    ],
+    "cdr_ids": [
+      "CDR_098559"
+    ],
+    "ipdr_ids": []
+  },
+  {
+    "entity_id": "phone:7810917733",
+    "window_start": "2025-05-28T03:55:38",
+    "window_end": "2025-05-28T04:55:38",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 0,
+    "is_injected": false,
+    "risk_score": 30,
+    "bank_ids": [
+      "TXN0000040264"
+    ],
+    "cdr_ids": [
+      "CDR_040957"
+    ],
+    "ipdr_ids": []
+  },
+  {
+    "entity_id": "phone:6305675757",
+    "window_start": "2025-05-16T13:15:19",
+    "window_end": "2025-05-16T14:15:19",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 0,
+    "is_injected": false,
+    "risk_score": 30,
+    "bank_ids": [
+      "TXN0000037098"
+    ],
+    "cdr_ids": [
+      "CDR_007269"
+    ],
+    "ipdr_ids": []
+  },
+  {
+    "entity_id": "phone:6664183082",
+    "window_start": "2025-07-25T15:37:53",
+    "window_end": "2025-07-25T16:37:53",
+    "bank_count": 1,
+    "cdr_count": 1,
+    "ipdr_count": 0,
+    "is_injected": false,
+    "risk_score": 30,
+    "bank_ids": [
+      "TXN0000056273"
+    ],
+    "cdr_ids": [
+      "CDR_017358"
+    ],
+    "ipdr_ids": []
+  },
+  {
+    "entity_id": "phone:8613480895",
+    "window_start": "2025-11-12T00:57:01",
+    "window_end": "2025-11-12T01:57:01",
+    "bank_count": 0,
+    "cdr_count": 1,
+    "ipdr_count": 1,
+    "is_injected": false,
+    "risk_score": 0,
+    "bank_ids": [],
+    "cdr_ids": [
+      "CDR_063142"
+    ],
+    "ipdr_ids": [
+      "IPDR_011061"
+    ]
+  }
+]

@@ -15,8 +15,6 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
-import polars as pl
-
 
 # ── Config ───────────────────────────────────────────────────────────────────
 
@@ -399,7 +397,8 @@ def main() -> None:
     # Save
     out_dir = root / "data" / "reports"
     out_dir.mkdir(parents=True, exist_ok=True)
-    out_path = out_dir / f"STR_{entity_id}.md"
+    safe_entity_id = entity_id.replace(":", "_")
+    out_path = out_dir / f"STR_{safe_entity_id}.md"
     out_path.write_text(md, encoding="utf-8")
 
     print(f"[STR] Report saved to: {out_path}")

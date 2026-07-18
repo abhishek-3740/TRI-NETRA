@@ -323,9 +323,14 @@ def run_ingestion(
 if __name__ == "__main__":
     ROOT = Path(__file__).parent.parent
 
-    # Example usage
-    run_ingestion(
-        pdf_path=ROOT / "data" / "raw" / "sample_hdfc_statement.pdf",
-        bank_name="HDFC",
-        out_csv=ROOT / "data" / "parsed" / "normalized_statement.csv",
-    )
+    # Example usage — requires a sample PDF to be placed at this path
+    sample_pdf = ROOT / "data" / "raw_statements" / "sample_hdfc_statement.pdf"
+    if sample_pdf.exists():
+        run_ingestion(
+            pdf_path=sample_pdf,
+            bank_name="HDFC",
+            out_csv=ROOT / "data" / "parsed" / "normalized_statement.csv",
+        )
+    else:
+        print(f"[IE] No sample PDF found at {sample_pdf}. Skipping demo run.")
+        print("[IE] Place an HDFC bank statement PDF at the above path to test ingestion.")

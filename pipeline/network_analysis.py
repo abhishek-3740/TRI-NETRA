@@ -1,4 +1,3 @@
-# Paste the network_analysis.py code from Claude/Kimi here
 """
 pipeline/network_analysis.py
 Mule Account Network Analysis for TRI-NETRA (ERH26_PS_03).
@@ -12,6 +11,7 @@ from __future__ import annotations
 import json
 import math
 from dataclasses import dataclass, field
+from datetime import datetime
 from pathlib import Path
 from typing import Dict, List, Optional, Set, Tuple
 
@@ -261,7 +261,7 @@ def plot_mule_network(
 
 def save_mule_accounts(mules: List[MuleAccount], path: str | Path) -> None:
     out = {
-        "generated_at": str(Path(__file__).stem),
+        "generated_at": datetime.now().isoformat(),
         "count": len(mules),
         "mule_accounts": [m.to_dict() for m in mules],
     }
