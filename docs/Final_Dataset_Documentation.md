@@ -72,26 +72,25 @@
 | 4 | `Call_Duration_Seconds` | int | 0% | Duration (0 for Missed/Failed, synced with timestamps) |
 | 5 | `Call_Type` | string | 0% | `Outgoing` \| `Incoming` \| `Missed` |
 | 6 | `Call_Status` | string | 0% | `Completed` \| `Missed` \| `Failed` \| `Dropped` |
-| 7 | `Subscriber_ID` | string | 0% | Telecom subscriber ID (`SUB_xxxxxx`) |
-| 8 | `Caller_MSISDN` | int | 0% | 10-digit caller phone number |
-| 9 | `Receiver_MSISDN` | int | 0% | 10-digit receiver phone number |
-| 10 | `Caller_Name` | string | 0% | Caller name |
-| 11 | `Receiver_Name` | string | 0% | Receiver name |
-| 12 | `SIM_Number` | int | 0% | SIM serial |
-| 13 | `IMSI` | int | **2.5%** | IMSI number |
-| 14 | `IMEI` | int/float | **2.5%** | Device IMEI (key linking field to IPDR) |
-| 15 | `Device_Model` | string | 0% | Phone model |
-| 16 | `Device_OS` | string | 0% | `Android` \| `iOS` |
-| 17 | `Network_Provider` | string | 0% | `Airtel` \| `Jio` \| `Vodafone Idea` \| `BSNL` |
-| 18 | `Network_Type` | string | 0% | `4G` \| `5G` |
-| 19 | `Cell_Tower_ID` | string | **2.5%** | Tower identifier (e.g., `TOWER_MUM_123`) |
-| 20 | `Tower_City` | string | **2.5%** | City name (coordinates now match city) |
-| 21 | `Latitude` | float | **2.5%** | Latitude (realistic, city-matched) |
-| 22 | `Longitude` | float | **2.5%** | Longitude (realistic, city-matched) |
-| 23 | `International_Call_Flag` | int | 0% | 0/1 flag (~1% flagged) |
-| 24 | `Roaming_Flag` | int | 0% | 0/1 flag (~5% flagged) |
+| 7 | `Caller_MSISDN` | int | 0% | 10-digit caller phone number |
+| 8 | `Receiver_MSISDN` | int | 0% | 10-digit receiver phone number |
+| 9 | `Caller_Name` | string | 0% | Caller name |
+| 10 | `Receiver_Name` | string | 0% | Receiver name |
+| 11 | `SIM_Number` | int | 0% | SIM serial |
+| 12 | `IMSI` | int | **2.5%** | IMSI number |
+| 13 | `IMEI` | int/float | **2.5%** | Device IMEI (key linking field to IPDR) |
+| 14 | `Device_Model` | string | 0% | Phone model |
+| 15 | `Device_OS` | string | 0% | `Android` \| `iOS` |
+| 16 | `Network_Provider` | string | 0% | `Airtel` \| `Jio` \| `Vodafone Idea` \| `BSNL` |
+| 17 | `Network_Type` | string | 0% | `4G` \| `5G` |
+| 18 | `Cell_Tower_ID` | string | **2.5%** | Tower identifier (e.g., `TOWER_MUM_123`) |
+| 19 | `Tower_City` | string | **2.5%** | City name (coordinates now match city) |
+| 20 | `Latitude` | float | **2.5%** | Latitude (realistic, city-matched) |
+| 21 | `Longitude` | float | **2.5%** | Longitude (realistic, city-matched) |
+| 22 | `International_Call_Flag` | int | 0% | 0/1 flag (~1% flagged) |
+| 23 | `Roaming_Flag` | int | 0% | 0/1 flag (~5% flagged) |
 
-**Key identifiers:** `Caller_MSISDN` (links to Bank phone), `IMEI` (links to IPDR), `Subscriber_ID` (internal CDR only — does NOT reliably link to IPDR)
+**Key identifiers:** `Caller_MSISDN` (links to Bank phone), `IMEI` (links to IPDR)
 
 **Call logic (fixed):**
 - Missed calls: `Duration=0`, `Status=Missed`, `End=Start` — 100% consistent
@@ -108,28 +107,27 @@
 |---|---|---|---|---|
 | 1 | `IPDR_ID` | string | 0% | Unique ID (e.g., `IPDR_000001`, injected: `INJ_IPDR_0001`) |
 | 2 | `Session_ID` | string | 0% | Session identifier |
-| 3 | `Subscriber_ID` | string | 0% | ISP subscriber ID (`SUB_xxxxxx`) |
-| 4 | `User_MSISDN` | int | 0% | 10-digit phone number (key link to Bank + CDR) |
-| 5 | `User_Name` | string | 0% | User name |
-| 6 | `Session_Start_Time` | datetime | 0% | Session start (2025 full year) |
-| 7 | `Session_End_Time` | datetime | 0% | Session end |
-| 8 | `Session_Duration_Seconds` | int | 0% | Duration in seconds |
-| 9 | `Data_Usage_MB` | float | 0% | Total data in MB |
-| 10 | `Upload_MB` | float | 0% | Upload portion |
-| 11 | `Download_MB` | float | 0% | Download portion |
-| 12 | `Public_IP_Address` | string | **2.5%** | Public IP (e.g., `115.132.98.28`) |
-| 13 | `Private_IP_Address` | string | 0% | NAT private IP (e.g., `192.168.x.x`) |
-| 14 | `ISP_Name` | string | 0% | `Airtel Broadband` \| `JioFiber` \| `BSNL` \| `Vodafone Idea` \| `ACT Fibernet` |
-| 15 | `Network_Type` | string | 0% | `WiFi` \| `4G` \| `5G` \| `Fiber` |
-| 16 | `Connection_Type` | string | 0% | `Mobile_Data` \| `Public_WiFi` \| `Home_Broadband` |
-| 17 | `Device_ID` | string | **2.5%** | Device identifier |
-| 18 | `IMEI` | int/float | **2.5%** | Device IMEI (key link to CDR) |
-| 19 | `Device_Model` | string | 0% | Phone model |
-| 20 | `Operating_System` | string | 0% | `Android` \| `iOS` |
-| 21 | `Browser` | string | 0% | `Chrome` \| `Safari` \| `Firefox` \| `Edge` \| `App_WebView` |
-| 22 | `IP_Location_City` | string | **2.5%** | City name |
-| 23 | `Latitude` | float | **2.5%** | Latitude |
-| 24 | `Longitude` | float | **2.5%** | Longitude |
+| 3 | `User_MSISDN` | int | 0% | 10-digit phone number (key link to Bank + CDR) |
+| 4 | `User_Name` | string | 0% | User name |
+| 5 | `Session_Start_Time` | datetime | 0% | Session start (2025 full year) |
+| 6 | `Session_End_Time` | datetime | 0% | Session end |
+| 7 | `Session_Duration_Seconds` | int | 0% | Duration in seconds |
+| 8 | `Data_Usage_MB` | float | 0% | Total data in MB |
+| 9 | `Upload_MB` | float | 0% | Upload portion |
+| 10 | `Download_MB` | float | 0% | Download portion |
+| 11 | `Public_IP_Address` | string | **2.5%** | Public IP (e.g., `115.132.98.28`) |
+| 12 | `Private_IP_Address` | string | 0% | NAT private IP (e.g., `192.168.x.x`) |
+| 13 | `ISP_Name` | string | 0% | `Airtel Broadband` \| `JioFiber` \| `BSNL` \| `Vodafone Idea` \| `ACT Fibernet` |
+| 14 | `Network_Type` | string | 0% | `WiFi` \| `4G` \| `5G` \| `Fiber` |
+| 15 | `Connection_Type` | string | 0% | `Mobile_Data` \| `Public_WiFi` \| `Home_Broadband` |
+| 16 | `Device_ID` | string | **2.5%** | Device identifier |
+| 17 | `IMEI` | int/float | **2.5%** | Device IMEI (key link to CDR) |
+| 18 | `Device_Model` | string | 0% | Phone model |
+| 19 | `Operating_System` | string | 0% | `Android` \| `iOS` |
+| 20 | `Browser` | string | 0% | `Chrome` \| `Safari` \| `Firefox` \| `Edge` \| `App_WebView` |
+| 21 | `IP_Location_City` | string | **2.5%** | City name |
+| 22 | `Latitude` | float | **2.5%** | Latitude |
+| 23 | `Longitude` | float | **2.5%** | Longitude |
 
 **Key identifiers:** `User_MSISDN` (links to Bank phone + CDR phone), `IMEI` (links to CDR)
 
@@ -161,8 +159,6 @@ This is how the three datasets connect — the core of the PS_03 "Fusion" requir
 | Phone: All three | **100** | 100 entities discoverable across all datasets |
 | IMEI: CDR ∩ IPDR | **100** | Same 100 entities, also linkable via device |
 | UPI→Phone extraction | ~32.5% of UPIs | `9876543210@paytm` → phone `9876543210` |
-
-> **CRITICAL WARNING:** `Subscriber_ID` appears in both CDR and IPDR (7,634 overlapping IDs) but maps to DIFFERENT phones and IMEIs. It is NOT a valid join key. Only `Phone Number` and `IMEI` are reliable cross-dataset identifiers.
 
 ---
 
@@ -268,4 +264,3 @@ These sequences are the minimum demonstration payload for PS_03 evaluation crite
 | Bank is a "god-view" ledger | Moderate | Contains both Sender and Receiver full metadata on every row. Real bank statements are one-sided. The ingestion engine won't need to parse messy narration strings for the receiver. |
 | No PDF/Excel test files | Moderate | All data is CSV. The FR-1.1 PDF/Excel parsing capability needs separate test files created. |
 | IPDR injected rows may have stale coordinates | Minor | The 40 injected IPDR fraud rows copied template lat/lon from original data before the city-fix pass. These are <0.08% of total IPDR rows. |
-| Subscriber_ID naming collision | Awareness | Same IDs exist in CDR and IPDR but map to different people. Pipeline must NOT join on this field. |
