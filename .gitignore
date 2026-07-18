@@ -15,5 +15,5 @@ ml_artifacts/*.pt
 
 # Generated Data
 data/final/*.csv
-data/final/*.json
+# data/final/*.json
 data/internal/*.json
