@@ -11,3 +11,9 @@ ml_artifacts/*.pt
 *.log
 .DS_Store
 .claude/
+.agents/
+
+# Generated Data
+data/final/*.csv
+data/final/*.json
+data/internal/*.json
