@@ -85,11 +85,11 @@ Below is a plain-English explanation of exactly what Kalpit built:
 ### 🌿 Git Branching Strategy (CRITICAL)
 To avoid merge conflicts, we are strictly using branch isolation for the next phases:
 
-1.  **`main` Branch (Kalpit's Domain):** Kalpit will continue using the `main` branch tomorrow to build the final Machine Learning models (Isolation Forest). **Do not push your work to main.**
-2.  **`backend` Branch (Arpit & Abhishek):** You must create and checkout a new branch named `backend`. Do all your Docker, PostgreSQL, Neo4j, and FastAPI work here.
+1.  **`main` Branch (ML Models):** We will continue using the `main` branch tomorrow to build the final Machine Learning models (Isolation Forest).
+2.  **`backend` Branch:** Create and checkout a new branch named `backend` for all Docker, PostgreSQL, Neo4j, and FastAPI work.
 3.  **`frontend` Branch:** We will use a totally separate branch for the React/Vite dashboard and LLM chat integrations later.
 
-### What the Backend Team Must Do Next (on the `backend` branch):
+### What the Team Must Do Next (on the `backend` branch):
 1. **Read the Docs:** You MUST read the exact dataset specifications, column types, and schemas located in [docs/Final_Dataset_Documentation.md](file:///f:/ERAKSHAK/TRI-NETRA/docs/Final_Dataset_Documentation.md). This document contains everything you need to build the PostgreSQL tables.
 2. **Infrastructure Setup:** Write a `docker-compose.yml` to spin up PostgreSQL and Neo4j. 
 3. **Database Ingestion:** Write the SQL schemas and a bulk-insert script to push the 250,000 rows from `data/final/` into PostgreSQL.

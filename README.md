@@ -20,4 +20,4 @@ Please see the `docs/` directory for exhaustive technical specifications:
 *   `docs/TRINETRA_Master_Project_Handbook.md` - The overarching strategy and hackathon requirements matrix.
 
 ## Next Steps
-The backend team (Arpit & Abhishek) is slated to migrate the local JSON outputs into PostgreSQL/Neo4j and build the FastAPI layer for the React dashboard. Machine Learning extensions (Isolation Forest) are queued for tomorrow.
+The team will dynamically rotate roles to migrate the local JSON outputs into PostgreSQL/Neo4j and build the FastAPI layer for the React dashboard. Machine Learning extensions (Isolation Forest) are queued for tomorrow.
