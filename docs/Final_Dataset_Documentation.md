@@ -8,9 +8,9 @@
 
 | File | Rows | Columns | Size | Date Range |
 |---|---|---|---|---|
-| `bank_transactions.csv` | 100,324 | 42 | 44.1 MB | Jan 1 – Dec 31, 2025 |
-| `cdr_final.csv` | 100,040 | 24 | 26.0 MB | Jan 1 – Dec 31, 2025 |
-| `ipdr_final.csv` | 50,992 | 24 | 13.6 MB | Jan 1 – Dec 31, 2025 |
+| `bank_transactions.csv` | 100,324 | 44 | 45.4 MB | Jan 1 – Dec 31, 2025 |
+| `cdr_final.csv` | 100,040 | 23 | 24.8 MB | Jan 1 – Dec 31, 2025 |
+| `ipdr_final.csv` | 50,992 | 23 | 13.0 MB | Jan 1 – Dec 31, 2025 |
 
 **Total: ~251K records across 3 datasets, all covering the full calendar year 2025.**
 
@@ -20,7 +20,7 @@
 
 ### 2.1 Bank Transactions (`bank_transactions.csv`)
 
-42 columns. Models a central payment ledger view of all bank-to-bank transactions.
+44 columns (42 original + 2 enriched: `Sender_IP_Address`, `Sender_Device_ID`). Models a central payment ledger view of all bank-to-bank transactions.
 
 | # | Column | Type | Nulls | Description |
 |---|---|---|---|---|
@@ -64,7 +64,9 @@
 
 ### 2.2 Call Detail Records (`cdr_final.csv`)
 
-24 columns. Models telecom operator CDR exports.
+23 columns. Models telecom operator CDR exports.
+
+> **Note:** The original raw CDR dataset had 24 columns including `Subscriber_ID`. This column was **stripped during data cleaning** because it collided across datasets (different people in CDR vs IPDR could share the same `Subscriber_ID`). The pipeline parser schema still lists 24 columns for backwards compatibility — the missing column will load as null and is never used for any join logic.
 
 | # | Column | Type | Nulls | Description |
 |---|---|---|---|---|
@@ -98,12 +100,15 @@
 - Missed calls: `Duration=0`, `Status=Missed`, `End=Start` — 100% consistent
 - Failed calls: `Duration=0`, `End=Start` — 100% consistent
 - Completed calls: `Duration = End - Start` — 0 mismatches
+- **Dropped calls (~3.2% of CDR):** These have short stored durations (3–9s) but their `Call_End_Time` reflects the full ring/connection period before the drop. This means `Duration ≠ End − Start` for Dropped calls. This is a known edge case from the data generator and does **not** affect any downstream pipeline stage (temporal fusion uses `Call_Start_Time` only).
 
 ---
 
 ### 2.3 Internet Protocol Detail Records (`ipdr_final.csv`)
 
-24 columns. Models ISP session logs.
+23 columns. Models ISP session logs.
+
+> **Note:** Same as CDR — the original raw IPDR had 24 columns including `Subscriber_ID`, which was stripped during data cleaning to prevent cross-dataset collision. The pipeline parser schema still lists 24 columns for backwards compatibility.
 
 | # | Column | Type | Nulls | Description |
 |---|---|---|---|---|
@@ -235,8 +240,8 @@ These sequences are the minimum demonstration payload for PS_03 evaluation crite
 | **P1: Locations** | Lat/lon was random noise (8°–37°N) for all cities | Remapped to real city coordinates ±15km | Mumbai CDR: lat 18.93–19.23 ✅ |
 | **P2: Call logic** | 33K missed calls had 7-min durations | All Missed/Failed → duration=0, end=start | 33,583/33,583 correct ✅ |
 | **P2b: Duration sync** | 18,745 duration mismatches | Recalculated from timestamps | 0 mismatches ✅ |
-| **P4: CDR analytics** | 4 pre-computed columns leaked | Stripped: `Calls_Per_Day`, `Average_Call_Duration`, `Unique_Contacts_Count`, `Night_Call_Ratio` | 28→24 cols ✅ |
-| **P4: IPDR analytics+flags** | 8 pre-computed/flag columns leaked | Stripped: `Location_Change_Count`, `Daily_Session_Count`, `Unique_IP_Count`, `Login_Frequency` + all 4 fraud flags | 32→24 cols ✅ |
+| **P4: CDR analytics** | 4 pre-computed columns leaked | Stripped: `Calls_Per_Day`, `Average_Call_Duration`, `Unique_Contacts_Count`, `Night_Call_Ratio` + `Subscriber_ID` (collision-prone) | 28→23 cols ✅ |
+| **P4: IPDR analytics+flags** | 8 pre-computed/flag columns leaked | Stripped: `Location_Change_Count`, `Daily_Session_Count`, `Unique_IP_Count`, `Login_Frequency` + all 4 fraud flags + `Subscriber_ID` (collision-prone) | 32→23 cols ✅ |
 | **P5: Temporal window** | CDR/IPDR covered October only | Redistributed across Jan–Dec 2025 (DOW-preserving, paired start/end) | 12 months each ✅ |
 | **P7: Missing values** | CDR/IPDR had zero nulls | Injected ~2.5% nulls in location, IMEI, tower, IP fields | CDR: 15K nulls, IPDR: 7.6K ✅ |
 
@@ -266,3 +271,6 @@ These sequences are the minimum demonstration payload for PS_03 evaluation crite
 | Bank is a "god-view" ledger | Moderate | Contains both Sender and Receiver full metadata on every row. Real bank statements are one-sided. The ingestion engine won't need to parse messy narration strings for the receiver. |
 | No PDF/Excel test files | Moderate | All data is CSV. The FR-1.1 PDF/Excel parsing capability needs separate test files created. |
 | IPDR injected rows may have stale coordinates | Minor | The 40 injected IPDR fraud rows copied template lat/lon from original data before the city-fix pass. These are <0.08% of total IPDR rows. |
+| `Subscriber_ID` stripped from CDR/IPDR | Minor | Column was removed during data cleaning because it collided across datasets (same IDs mapped to different people). Pipeline parser schemas still list 24 columns for backwards compatibility — the missing column loads as null and is never used for joins. |
+| Dropped calls: duration ≠ End−Start | Minor | ~3.2% of CDR rows with `Call_Status=Dropped` have `Call_Duration_Seconds` ≠ `Call_End_Time − Call_Start_Time`. The generator zeroed Missed/Failed but not Dropped. No downstream pipeline stage is affected. |
+| `numpy` was missing from `requirements.txt` | Minor | `numpy` is imported by `spatial_colocation.py` and `impossible_travel.py`. It was previously installed transitively via `scikit-learn`, but is now listed explicitly. |
