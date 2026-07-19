@@ -1,4 +1,5 @@
 polars
+numpy
 rapidfuzz
 networkx
 matplotlib
