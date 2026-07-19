@@ -9,7 +9,7 @@
 When the project started, Ayushman pushed an initial batch of raw, unlinked CSV data. While it was a good starting point, we realized it had significant issues that prevented us from doing real data fusion:
 - The locations (latitude/longitude) were completely random.
 - Call durations and timestamps didn't logically match up.
-- The `Subscriber_ID` column was corrupted (it mapped to different phones and IMEIs in different files).
+- The `Subscriber_ID` column was corrupted (it mapped to different phones and IMEIs in different files). It was **fully removed** from the final CDR/IPDR CSVs during data cleaning (reducing both from 24 to 23 columns). The pipeline never uses it for joins.
 - Most importantly, there were no guaranteed overlaps across the Bank, CDR (Call Details), and IPDR (Internet Sessions) datasets to actually test our fraud detection engine.
 
 **Action Taken (by Kalpit):** We deprecated that initial raw data. Kalpit built a robust synthetic data generator to create a massive, perfectly interlocking dataset of **251,000 records** spanning the full calendar year of 2025. 
